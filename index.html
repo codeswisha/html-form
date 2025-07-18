@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>complete form exmaple</title>
 </head>
+
 <body>
     <h1>Html form with Various Input Elements</h1>
 
@@ -15,7 +17,7 @@
         <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
         <label for=subscribe>Subscribe to our newsletter:</label>
-        <input type="checkbox" id="subscribe" name="subscribe"value="yes">
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
 
         <label>Gender:</label>
         <input type="radio" id="male" name="male" value="male">
@@ -48,8 +50,8 @@
     <h2>The Versatile Attributes</h2>
     <form>
         <label for="age">Age:</label>
-        <input type="number" id="age" name="age" min="18" max="99"required>
-        
+        <input type="number" id="age" name="age" min="18" max="99" required>
+
         <label for="newsletter">Subscribe to our newsletter:</label>
         <input type="checkbox" id="newsletter" name="newsletter" value="yes">
 
@@ -64,6 +66,55 @@
 
         <button type="reset">Reset</button>
         <button type="submit">Submit</button>
- </form>
+        <form action="#" method="POST">
+            <!-- Personal Information Section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                <br><br>
+
+                <label for="user-email">Email:</label>
+                <input type="email" id="user-email" name="user-email" required placeholder="Enter your email">
+                <br><br>
+
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate">
+                <br><br>
+            </fieldset>
+
+            <!-- Preferences Section -->
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" step="1">
+                <br><br>
+
+                <label for="news">Would you like to receive our newsletter?</label>
+                <input type="radio" id="yes" name="news" value="yes"> Yes
+                <input type="radio" id="no" name="news" value="no"> No
+                <br><br>
+
+                <p>Select your hobbies:</p>
+                <input type="checkbox" id="reading" name="hobbies" value="coding">
+                <label for="reading">coding</label>
+                <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+                <label for="gaming">Gaming</label>
+                <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                <label for="traveling">Traveling</label>
+                <br><br>
+            </fieldset>
+
+            <!-- Feedback Section -->
+            <fieldset>
+                <legend>Feedback</legend>
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your comments here..."></textarea>
+                <br><br>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
 </body>
+
 </html>
